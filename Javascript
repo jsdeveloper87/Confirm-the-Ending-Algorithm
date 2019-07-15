@@ -1,0 +1,12 @@
+function confirmEnding(str, target) {
+  let strReversed = str.split('').reverse().join('');
+  let targetReversed = target.split('').reverse().join('');
+  let sliced = strReversed.slice(0, target.length);
+  if (sliced == targetReversed) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+confirmEnding("Open sesame", "same")
